@@ -55,7 +55,7 @@ steps:
 # Run a Python script.
 - task: PythonScript@0
   inputs:
-  targetType: 'inline'
+    targetType: 'inline'
   -script:|
       print('Hello world 1')
       print('Hello world 2')
