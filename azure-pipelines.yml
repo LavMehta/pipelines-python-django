@@ -51,3 +51,16 @@ steps:
     versionSpec: '3.7' 
     addToPath: true 
     architecture: 'x64' # Options: x86, x64 (this argument applies only on Windows agents)
+    # Python Script
+# Run a Python script.
+- task: PythonScript@0
+  inputs:
+  targetType: 'inline'
+  -script:|
+      print('Hello world 1')
+      print('Hello world 2')
+   
+    #arguments: # Optional
+    #pythonInterpreter: # Optional
+    #workingDirectory: # Optional
+    #failOnStderr: false # Optional
